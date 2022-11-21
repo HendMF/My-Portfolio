@@ -12,7 +12,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
   transition: all 0.2s linear;
 }
 
@@ -287,7 +286,9 @@ header .navbar a:hover {
   flex-wrap: wrap;
   gap: 1.5rem;
 }
-
+.portfolio .smaller{
+  font-size: 5rem;
+}
 .portfolio .box-container .box {
   flex: 1 1 30rem;
   border-radius: 0.5rem;
