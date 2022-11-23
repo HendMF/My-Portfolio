@@ -450,8 +450,8 @@ header .navbar a:hover {
   }
 }
 @media (max-width: 850px) {
-  .about .row{
-    margin-top: 50px;
+  .about .row {
+    margin-top: 30px;
   }
   .about .row .image {
     display: none;
@@ -461,7 +461,6 @@ header .navbar a:hover {
   .education .box-container .box {
     width: 100%;
   }
-
 }
 @media (max-width: 450px) {
   html {
