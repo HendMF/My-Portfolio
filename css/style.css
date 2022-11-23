@@ -452,13 +452,13 @@ header .navbar a:hover {
 @media (max-width: 850px) {
   
   .about .row {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .about .row .image {
     display: none;
   }
   .education{
-    /* margin-top: 20px; */
+    margin-top: 40px;
   }
 }
 @media (max-width: 450px) {
