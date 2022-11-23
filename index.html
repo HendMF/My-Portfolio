@@ -4,7 +4,7 @@
     <meta ch#17335cecF-8 />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Hind Mahmoud</title>
     <link
       rel="icon"
       type="image/png"
@@ -14,7 +14,7 @@
     <!-- font awesome cdn link  -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
 
     <!-- custom css file link  -->
@@ -29,8 +29,9 @@
       <nav class="navbar">
         <a href="#home">home</a>
         <a href="#about">about</a>
-        <a href="#portfolio">Projects</a>
-        <!-- <a href="#contact">contact</a> -->
+        <a href="#education">education</a>
+        <a href="#portfolio">projects</a>
+        <a href="#contact">contact</a>
       </nav>
     </header>
 
@@ -117,6 +118,55 @@
     </section>
 
     <!-- about section ends -->
+
+    <!-- education section  -->
+
+    <section class="education" id="education">
+      <h1 class="heading">Education <span>and</span> Experience</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="year">2018 - 2022</div>
+          <h3>Bachelor of science zagazig university</h3>
+          <p>
+            I joined the Faculty of Science, Zagazig University, then I joined
+            the Department of Computer Science
+          </p>
+        </div>
+        <div class="box">
+          <div class="year">Nov 2021</div>
+
+          <h3>
+            Certificate 2
+            <a
+              href="https://graduation.udacity.com/confirm/UK4SKSGX"
+              target="_blank"
+              ><i
+                class="fa-solid fa-arrow-up-right-from-square goToCertificate"
+              ></i
+            ></a>
+          </h3>
+          <p>
+            Front-End Web Development Professional Nanodegree program program
+          </p>
+        </div>
+        <div class="box">
+          <div class="year">Jun 2021</div>
+          <h3>Certificate 1</h3>
+          <p>Front-End challenger Program in Front-End Web Development</p>
+        </div>
+
+        <!-- <div class="box">
+          <div class="year">2020 - 2021</div>
+          <h3>front end development</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore ut
+            quis nam eos deserunt veritatis adipisci, beatae odio rerum
+            doloribus?
+          </p>
+        </div> -->
+      </div>
+    </section>
 
     <!-- portfolio section starts  -->
 
@@ -253,7 +303,7 @@
     <!-- portfolio section ends -->
     <!-- contact section starts  -->
 
-    <!-- <section class="contact" id="contact">
+    <section class="contact" id="contact">
       <h1 class="heading">contact <span> me </span></h1>
 
       <div class="row">
@@ -261,26 +311,37 @@
           <img class="tilt" src="images/contact-img.svg" alt="" />
         </div>
 
-        <form action="">
+        <form action="https://formspree.io/f/mnqrynay" method="post">
           <div class="inputBox">
-            <input type="text" placeholder="name" />
-            <input type="email" placeholder="email" />
+            <input
+              type="text"
+              placeholder="name"
+              name="name"
+              class="name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="email"
+              name="email"
+              class="email"
+              required
+            />
           </div>
-
-          <input type="text" placeholder="subject" class="box" />
-
           <textarea
             placeholder="message"
-            name=""
+            name="message"
             id=""
             cols="30"
             rows="10"
+            class="message"
+            required
           ></textarea>
 
-          <input type="submit" class="btn" value="send message" />
+          <input type="submit" class="btn send" value="send message" />
         </form>
       </div>
-    </section> -->
+    </section>
 
     <!-- contact section ends -->
 
@@ -305,7 +366,14 @@
     <script>
       let menu = document.querySelector("#menu-bars");
       let header = document.querySelector("header");
-
+      let send = document.querySelector(".send");
+      send.onclick = () => {
+        setInterval(() => {
+          document.querySelector(".name").value = "";
+          document.querySelector(".email").value = "";
+          document.querySelector(".message").value = "";
+        }, 0.2);
+      };
       menu.onclick = () => {
         menu.classList.toggle("fa-times");
         header.classList.toggle("active");
