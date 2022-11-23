@@ -449,10 +449,19 @@ header .navbar a:hover {
     font-size: 3rem;
   }
 }
+@media (max-width: 850px) {
+  .about .row{
+    margin-top: 50px;
+  }
+  .about .row .image {
+    display: none;
+  }
+}
 @media (max-width: 450px) {
   .education .box-container .box {
     width: 100%;
   }
+
 }
 @media (max-width: 450px) {
   html {
